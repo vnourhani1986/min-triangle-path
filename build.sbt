@@ -10,5 +10,5 @@ ThisBuild / scalafmtOnCompile := true
 lazy val root = (project in file("."))
   .settings(
     name := "Min Triangle Path",
-    libraryDependencies ++= Seq(catsEffect, scalaTest, log)
+    libraryDependencies ++= catsEffect :: scalaTest :: fs2
   )
